@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?><TestRun id="88511765-7cd3-425e-8615-72e8526f27d7" name="@jenkins 2019-11-27 11:59:25" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010"><Times creation="2019-11-27T11:59:25.5605067+00:00" queuing="2019-11-27T11:59:25.5605068+00:00" start="2019-11-27T11:59:14.4740008+00:00" finish="2019-11-27T12:04:04.6694787+00:00" /><TestSettings name="default" id="73804a9e-0913-4157-a8e0-a1de2253de00"><Deployment runDeploymentRoot="_jenkins_2019-11-27_11_59_25" /></TestSettings><Results><UnitTestResult executionId="81ef84ac-9faa-4c39-a871-84fb5fdc2f9e" testId="4f50b38d-27ec-489e-a353-1b530dee6987" testName="SearchToOptionInACircularRegionForAllPassengerTypes(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48.2802&quot;,&quot;36br8t9byf4&quot;,&quot;refundable&quot;,null)" computerName="jenkins" duration="00:00:09.4090000" startTime="2019-11-27T12:03:20.0000000+00:00" endTime="2019-11-27T12:03:29.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81ef84ac-9faa-4c39-a871-84fb5fdc2f9e"><Output><StdOut>Given User has specified latitude 42.374154, longitude -72.503869 and radius of 48.2802 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(42.374154, -72.503869, 48.2802, "36br8t9byf4", "USD") (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (3.2s)
+And User has selected refundable activity
+-&gt; done: ActivityDetailsStatefullSteps.GivenUserHasSelectedRefundableActivity("refundable") (0.0s)
+And Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (3.1s)
+And User has selected all passenger types
+-&gt; done: OptionSearchSteps.GivenUserHasSelectedAllPassengerTypes() (0.0s)
+When Activity option is called
+-&gt; done: OptionSearchSteps.WhenActivityOptionIsCalled() (3.1s)
+Then Returned options count should be greater than zero
+-&gt; done: OptionSearchSteps.ThenFoundActivityCountShouldBeGreaterThan() (0.0s)
+[INFO]: Correlation id : 41ec60b1-baba-41d8-9905-a54dc0436dd8</StdOut></Output></UnitTestResult><UnitTestResult executionId="733db963-8f0c-4bd2-8291-9f9b264d9133" testId="ab6c7a5b-f729-4ff3-a5ab-fa825e718726" testName="SearchForActivitesInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" computerName="jenkins" duration="00:00:03.1550000" startTime="2019-11-27T12:03:58.0000000+00:00" endTime="2019-11-27T12:04:01.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="733db963-8f0c-4bd2-8291-9f9b264d9133"><Output><StdOut>Given User has specified latitude 48.85667, longitude 2.350987 and radius of 30 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(48.85667, 2.350987, 30, "36br8t9byf4", "USD") (0.0s)
+When Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (3.1s)
+Then Returned activities count should be greater than zero
+-&gt; done: ActivitySearchSteps.ThenFoundActivitiesCountShouldBeGreaterThan() (0.0s)
+[INFO]: Correlation id : 61bcd878-d8e7-4699-b3b5-61d63640300d</StdOut></Output></UnitTestResult><UnitTestResult executionId="91a1cd65-0295-4da9-b7b6-10320f6c4496" testId="52d08c4f-40e3-43f4-a85c-354dbb167722" testName="SearchToBookInACircularRegionForAllPassengerTypes(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48.23&quot;,&quot;36br8t9byf4&quot;,null)" computerName="jenkins" duration="00:00:19.3130000" startTime="2019-11-27T12:00:19.0000000+00:00" endTime="2019-11-27T12:00:38.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91a1cd65-0295-4da9-b7b6-10320f6c4496"><Output><StdOut>Given User has specified latitude 42.374154, longitude -72.503869 and radius of 48.23 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(42.374154, -72.503869, 48.23, "36br8t9byf4", "USD") (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (3.1s)
+And Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (6.2s)
+And User specified currency for option is USD
+-&gt; done: OptionSearchSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And User has selected all passenger types
+-&gt; done: OptionSearchSteps.GivenUserHasSelectedAllPassengerTypes() (0.0s)
+And Activity option is called
+-&gt; done: OptionSearchSteps.WhenActivityOptionIsCalled() (3.1s)
+And User specified currency for price request is USD
+-&gt; done: PriceRequestSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity price is executed
+-&gt; done: PriceRequestSteps.WhenActivityPriceIsExecuted() (1.9s)
+When Booking is attempted
+-&gt; done: BookRequestSteps.WhenBookingIsAttempted() (5.1s)
+Then Book should be confirmed
+-&gt; done: BookRequestSteps.ThenBookShouldBeConfirmed() (0.0s)
+[INFO]: Correlation id : 293313be-40c9-4f9d-8db4-e61e14c2f13c</StdOut></Output></UnitTestResult><UnitTestResult executionId="4d13a9ea-eff4-4ba2-bf51-0e30d7c17598" testId="83289acb-e4a5-4ce6-97b7-91ebdbe769ae" testName="SearchToCancelInACircularRegionForSameDay(&quot;Delhi&quot;,&quot;28.56639&quot;,&quot;77.10306&quot;,&quot;48.2802&quot;,&quot;36br8t9byf4&quot;,null)" computerName="jenkins" duration="00:00:21.7650000" startTime="2019-11-27T12:01:42.0000000+00:00" endTime="2019-11-27T12:02:04.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d13a9ea-eff4-4ba2-bf51-0e30d7c17598"><Output><StdOut>Given User has specified latitude 28.56639, longitude 77.10306 and radius of 48.2802 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(28.56639, 77.10306, 48.2802, "36br8t9byf4", "USD") (0.0s)
+And User has specified activity start date as number of days '0' from today and search range as '0'
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedActivityStartDateAsNumberOfDaysFromTodayAndSearchRangeAs(0, 0) (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (6.1s)
+And Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (3.1s)
+And User specified currency for option is USD
+-&gt; done: OptionSearchSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity option is called
+-&gt; done: OptionSearchSteps.WhenActivityOptionIsCalled() (3.1s)
+And User specified currency for price request is USD
+-&gt; done: PriceRequestSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity price is executed
+-&gt; done: PriceRequestSteps.WhenActivityPriceIsExecuted() (1.6s)
+And Booking is attempted
+-&gt; done: BookRequestSteps.WhenBookingIsAttempted() (7.3s)
+When Cancel request is raised
+-&gt; done: CancelRequestSteps.WhenBookingIsAttempted() (0.5s)
+Then Cancel should fail for confirmed booking
+-&gt; done: CancelRequestSteps.ThenCancelShouldFailForConfirmedBooking() (0.0s)
+[INFO]: Correlation id : 3f781f76-b3a0-4021-bea7-e13282f4e0a3</StdOut></Output></UnitTestResult><UnitTestResult executionId="5311b9f6-a4c4-41e9-b044-c1c8c579ae4a" testId="fce7052a-50f7-44da-9ca8-5e9e5e20d871" testName="SearchToOptionInACircularRegionForRefundableAndNon_RefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,&quot;refundable&quot;,null)" computerName="jenkins" duration="00:00:09.3090000" startTime="2019-11-27T12:03:39.0000000+00:00" endTime="2019-11-27T12:03:48.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5311b9f6-a4c4-41e9-b044-c1c8c579ae4a"><Output><StdOut>Given User has specified latitude 48.85667, longitude 2.350987 and radius of 30 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(48.85667, 2.350987, 30, "36br8t9byf4", "USD") (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (3.1s)
+And User has selected refundable activity
+-&gt; done: ActivityDetailsStatefullSteps.GivenUserHasSelectedRefundableActivity("refundable") (0.0s)
+And Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (3.1s)
+When Activity option is called
+-&gt; done: OptionSearchSteps.WhenActivityOptionIsCalled() (3.1s)
+Then Returned options count should be greater than zero
+-&gt; done: OptionSearchSteps.ThenFoundActivityCountShouldBeGreaterThan() (0.0s)
+[INFO]: Correlation id : 92066ca2-e35e-4ad7-b7fc-08ba4ed6807f</StdOut></Output></UnitTestResult><UnitTestResult executionId="6390dc87-0280-470b-a7c2-8a58460e09ce" testId="5456bd09-8b26-43c6-b8d2-f641e96f38a2" testName="SearchToOptionInACircularRegionForAllPassengerTypes(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48.2802&quot;,&quot;36br8t9byf4&quot;,&quot;non-refundable&quot;,null)" computerName="jenkins" duration="00:00:09.3230000" startTime="2019-11-27T12:03:11.0000000+00:00" endTime="2019-11-27T12:03:20.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6390dc87-0280-470b-a7c2-8a58460e09ce"><Output><StdOut>Given User has specified latitude 42.374154, longitude -72.503869 and radius of 48.2802 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(42.374154, -72.503869, 48.2802, "36br8t9byf4", "USD") (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (3.1s)
+And User has selected non-refundable activity
+-&gt; done: ActivityDetailsStatefullSteps.GivenUserHasSelectedRefundableActivity("non-refundable") (0.0s)
+And Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (3.1s)
+And User has selected all passenger types
+-&gt; done: OptionSearchSteps.GivenUserHasSelectedAllPassengerTypes() (0.0s)
+When Activity option is called
+-&gt; done: OptionSearchSteps.WhenActivityOptionIsCalled() (3.1s)
+Then Returned options count should be greater than zero
+-&gt; done: OptionSearchSteps.ThenFoundActivityCountShouldBeGreaterThan() (0.0s)
+[INFO]: Correlation id : 294e57d9-90a1-4b44-b508-ea337628c35c</StdOut></Output></UnitTestResult><UnitTestResult executionId="268bdf09-b74a-45b4-883f-86ae25f052bc" testId="21c195c5-b312-4e56-9ddd-6d9a1bd90c9c" testName="SearchToCancelInACircularRegionHavingRefundableOrNon_RefundableFare(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,&quot;refundable&quot;,null)" computerName="jenkins" duration="00:00:27.6680000" startTime="2019-11-27T12:02:34.0000000+00:00" endTime="2019-11-27T12:03:01.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="268bdf09-b74a-45b4-883f-86ae25f052bc"><Output><StdOut>Given User has specified latitude 48.85667, longitude 2.350987 and radius of 30 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(48.85667, 2.350987, 30, "36br8t9byf4", "USD") (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (6.2s)
+And User has specified currency for activity details as USD
+-&gt; done: ActivityDetailsStatefullSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (6.1s)
+And User specified currency for option is USD
+-&gt; done: OptionSearchSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And User has selected refundable activity
+-&gt; done: ActivityDetailsStatefullSteps.GivenUserHasSelectedRefundableActivity("refundable") (0.0s)
+And Activity option is called
+-&gt; done: OptionSearchSteps.WhenActivityOptionIsCalled() (3.1s)
+And User specified currency for price request is USD
+-&gt; done: PriceRequestSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity price is executed
+-&gt; done: PriceRequestSteps.WhenActivityPriceIsExecuted() (5.2s)
+And Booking is attempted
+-&gt; done: BookRequestSteps.WhenBookingIsAttempted() (5.3s)
+When Cancel request is raised
+-&gt; done: CancelRequestSteps.WhenBookingIsAttempted() (1.8s)
+Then Cancel should succeed for confirmed booking
+-&gt; done: CancelRequestSteps.ThenBookShouldBeConfirmed() (0.0s)
+[INFO]: Correlation id : bc29df68-29fa-4fc9-bd07-39c293e3cf88</StdOut></Output></UnitTestResult><UnitTestResult executionId="e074f15d-5e0e-4285-afde-dd836ad4ca64" testId="ded8775b-5261-455d-aaee-575dbedde8b9" testName="SearchToPriceInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" computerName="jenkins" duration="00:00:09.7070000" startTime="2019-11-27T12:03:48.0000000+00:00" endTime="2019-11-27T12:03:58.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e074f15d-5e0e-4285-afde-dd836ad4ca64"><Output><StdOut>Given User has specified latitude 48.85667, longitude 2.350987 and radius of 30 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(48.85667, 2.350987, 30, "36br8t9byf4", "USD") (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (3.1s)
+And User has specified currency for activity details as USD
+-&gt; done: ActivityDetailsStatefullSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (3.1s)
+And User specified currency for option is USD
+-&gt; done: OptionSearchSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity option is called
+-&gt; done: OptionSearchSteps.WhenActivityOptionIsCalled() (3.1s)
+And User specified currency for price request is USD
+-&gt; done: PriceRequestSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+When Activity price is executed
+-&gt; done: PriceRequestSteps.WhenActivityPriceIsExecuted() (0.4s)
+Then Valid price for selected option of activity should be returned
+-&gt; done: PriceRequestSteps.ThenValidPriceForSelectedOptionOfActivityShouldBeReturned() (0.0s)
+[INFO]: Correlation id : 5b844dc5-c401-4f10-befb-4b8ee1377fb3</StdOut></Output></UnitTestResult><UnitTestResult executionId="023cf1de-2d2e-4917-9462-6f64013b27aa" testId="86fea99d-77a4-405c-aa0b-cd85e77251d1" testName="SearchToBookInACircularRegionForSameDay(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" computerName="jenkins" duration="00:00:26.4410000" startTime="2019-11-27T12:00:38.0000000+00:00" endTime="2019-11-27T12:01:04.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="023cf1de-2d2e-4917-9462-6f64013b27aa"><Output><StdOut>Given User has specified latitude 48.85667, longitude 2.350987 and radius of 30 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(48.85667, 2.350987, 30, "36br8t9byf4", "USD") (0.0s)
+And User has specified activity start date as number of days '0' from today and search range as '0'
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedActivityStartDateAsNumberOfDaysFromTodayAndSearchRangeAs(0, 0) (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (3.1s)
+And Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (9.1s)
+And User specified currency for option is USD
+-&gt; done: OptionSearchSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity option is called
+-&gt; done: OptionSearchSteps.WhenActivityOptionIsCalled() (6.1s)
+And User specified currency for price request is USD
+-&gt; done: PriceRequestSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity price is executed
+-&gt; done: PriceRequestSteps.WhenActivityPriceIsExecuted() (2.9s)
+When Booking is attempted
+-&gt; done: BookRequestSteps.WhenBookingIsAttempted() (5.2s)
+Then Book should be confirmed
+-&gt; done: BookRequestSteps.ThenBookShouldBeConfirmed() (0.0s)
+[INFO]: Correlation id : f93e0e8b-1f34-487a-a733-f99aa7c2ec19</StdOut></Output></UnitTestResult><UnitTestResult executionId="36d116e1-2e4f-4447-a422-b1e639e03fd7" testId="58cc8277-408c-4817-a872-58c6668f20d3" testName="SearchToBookInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" computerName="jenkins" duration="00:00:25.8430000" startTime="2019-11-27T11:59:53.0000000+00:00" endTime="2019-11-27T12:00:19.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="36d116e1-2e4f-4447-a422-b1e639e03fd7"><Output><StdOut>Given User has specified latitude 48.85667, longitude 2.350987 and radius of 30 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(48.85667, 2.350987, 30, "36br8t9byf4", "USD") (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (3.2s)
+And User has specified currency for activity details as USD
+-&gt; done: ActivityDetailsStatefullSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (6.1s)
+And User specified currency for option is USD
+-&gt; done: OptionSearchSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity option is called
+-&gt; done: OptionSearchSteps.WhenActivityOptionIsCalled() (9.2s)
+And User specified currency for price request is USD
+-&gt; done: PriceRequestSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity price is executed
+-&gt; done: PriceRequestSteps.WhenActivityPriceIsExecuted() (1.4s)
+When Booking is attempted
+-&gt; done: BookRequestSteps.WhenBookingIsAttempted() (6.0s)
+Then Book should be confirmed
+-&gt; done: BookRequestSteps.ThenBookShouldBeConfirmed() (0.0s)
+[INFO]: Correlation id : 63248c30-5ca1-4528-b8d1-96b86a717bed</StdOut></Output></UnitTestResult><UnitTestResult executionId="35d84c20-c500-4a88-af3a-22a8da3a280a" testId="e3da7936-07fb-432a-8148-80f14608edef" testName="SearchToActivityDetailsForNon_RefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" computerName="jenkins" duration="00:00:09.9900000" startTime="2019-11-27T11:59:15.0000000+00:00" endTime="2019-11-27T11:59:25.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="35d84c20-c500-4a88-af3a-22a8da3a280a"><Output><StdOut>Given User has specified latitude 48.85667, longitude 2.350987 and radius of 30 kms for suppliers 36br8t9byf4  with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(48.85667, 2.350987, 30, "36br8t9byf4 ", "USD") (0.1s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (3.6s)
+And User has selected non-refundable activity
+-&gt; done: ActivityDetailsStatefullSteps.GivenUserHasSelectedRefundableActivity("non-refundable") (0.0s)
+When Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (6.2s)
+Then Returned activities count should be greater than zero And activity details should be returned
+-&gt; done: ActivityDetailsStatefullSteps.ThenFoundActivityCountShouldBeGreaterThan() (0.0s)
+And Activity returned should be non-refundable
+-&gt; done: ActivityDetailsStatefullSteps.ThenActivityReturnedShouldBeRefundable("non-refundable") (0.0s)
+[INFO]: Correlation id : 2b6e5e86-8db3-4165-bc65-6b263172adf2</StdOut></Output></UnitTestResult><UnitTestResult executionId="1abfdb3b-a56c-44dc-8ead-00ecfad0d85a" testId="38a94ed2-7d7c-49e6-a2e9-3f58d0f4a726" testName="SearchForActivitesInACircularRegionForSameDay(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48.2802&quot;,&quot;36br8t9byf4&quot;,null)" computerName="jenkins" duration="00:00:03.0880000" startTime="2019-11-27T12:04:01.0000000+00:00" endTime="2019-11-27T12:04:04.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1abfdb3b-a56c-44dc-8ead-00ecfad0d85a"><Output><StdOut>Given User has specified latitude 42.374154, longitude -72.503869 and radius of 48.2802 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(42.374154, -72.503869, 48.2802, "36br8t9byf4", "USD") (0.0s)
+And User has specified activity start date as number of days '0' from today and search range as '0'
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedActivityStartDateAsNumberOfDaysFromTodayAndSearchRangeAs(0, 0) (0.0s)
+When Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (3.1s)
+Then Returned activities count should be greater than zero
+-&gt; done: ActivitySearchSteps.ThenFoundActivitiesCountShouldBeGreaterThan() (0.0s)
+[INFO]: Correlation id : 4c1d3bbb-4a5d-4e07-a3ce-c838b16609b4</StdOut></Output></UnitTestResult><UnitTestResult executionId="171339b2-e8bd-405f-8fa8-ad9ad1ffc720" testId="d6a8d2c1-8fff-44ee-a965-07edd28bd304" testName="SearchToCancelInACircularRegionHavingRefundableOrNon_RefundableFare(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,&quot;non-refundable&quot;,null)" computerName="jenkins" duration="00:00:29.8160000" startTime="2019-11-27T12:02:04.0000000+00:00" endTime="2019-11-27T12:02:34.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="171339b2-e8bd-405f-8fa8-ad9ad1ffc720"><Output><StdOut>Given User has specified latitude 48.85667, longitude 2.350987 and radius of 30 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(48.85667, 2.350987, 30, "36br8t9byf4", "USD") (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (6.2s)
+And User has specified currency for activity details as USD
+-&gt; done: ActivityDetailsStatefullSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (6.1s)
+And User specified currency for option is USD
+-&gt; done: OptionSearchSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And User has selected non-refundable activity
+-&gt; done: ActivityDetailsStatefullSteps.GivenUserHasSelectedRefundableActivity("non-refundable") (0.0s)
+And Activity option is called
+-&gt; done: OptionSearchSteps.WhenActivityOptionIsCalled() (6.1s)
+And User specified currency for price request is USD
+-&gt; done: PriceRequestSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity price is executed
+-&gt; done: PriceRequestSteps.WhenActivityPriceIsExecuted() (2.7s)
+And Booking is attempted
+-&gt; done: BookRequestSteps.WhenBookingIsAttempted() (6.6s)
+When Cancel request is raised
+-&gt; done: CancelRequestSteps.WhenBookingIsAttempted() (2.0s)
+Then Cancel should succeed for confirmed booking
+-&gt; done: CancelRequestSteps.ThenBookShouldBeConfirmed() (0.0s)
+[INFO]: Correlation id : a78831bb-39e0-48eb-99dc-cee217991f9f</StdOut></Output></UnitTestResult><UnitTestResult executionId="3d98a233-7fbf-4af9-bddb-09e7d9311224" testId="6b4a431b-4c49-4b45-a747-9447c7356a32" testName="SearchToActivityDetailsInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" computerName="jenkins" duration="00:00:15.3680000" startTime="2019-11-27T11:59:37.0000000+00:00" endTime="2019-11-27T11:59:53.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3d98a233-7fbf-4af9-bddb-09e7d9311224"><Output><StdOut>Given User has specified latitude 48.85667, longitude 2.350987 and radius of 30 kms for suppliers 36br8t9byf4  with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(48.85667, 2.350987, 30, "36br8t9byf4 ", "USD") (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (6.2s)
+And User has specified currency for activity details as USD
+-&gt; done: ActivityDetailsStatefullSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+When Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (9.2s)
+Then Returned activities count should be greater than zero And activity details should be returned
+-&gt; done: ActivityDetailsStatefullSteps.ThenFoundActivityCountShouldBeGreaterThan() (0.0s)
+[INFO]: Correlation id : d1b96f3d-da0f-4245-9257-9473f9e0f8c0</StdOut></Output></UnitTestResult><UnitTestResult executionId="ae0dcbfd-e4f0-41d8-a3c7-4fd1fdfd06b0" testId="0ca91f6c-aad2-481c-93dd-6f19e0b525b0" testName="SearchToOptionInACircularRegionForRefundableAndNon_RefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,&quot;non-refundable&quot;,null)" computerName="jenkins" duration="00:00:09.3650000" startTime="2019-11-27T12:03:29.0000000+00:00" endTime="2019-11-27T12:03:39.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae0dcbfd-e4f0-41d8-a3c7-4fd1fdfd06b0"><Output><StdOut>Given User has specified latitude 48.85667, longitude 2.350987 and radius of 30 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(48.85667, 2.350987, 30, "36br8t9byf4", "USD") (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (3.2s)
+And User has selected non-refundable activity
+-&gt; done: ActivityDetailsStatefullSteps.GivenUserHasSelectedRefundableActivity("non-refundable") (0.0s)
+And Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (3.1s)
+When Activity option is called
+-&gt; done: OptionSearchSteps.WhenActivityOptionIsCalled() (3.1s)
+Then Returned options count should be greater than zero
+-&gt; done: OptionSearchSteps.ThenFoundActivityCountShouldBeGreaterThan() (0.0s)
+[INFO]: Correlation id : c19017f3-3593-4e71-8ee2-ded6f74a4264</StdOut></Output></UnitTestResult><UnitTestResult executionId="b6c2f606-275a-455b-ac8b-d90816054ea7" testId="e8497320-ebd5-4ed7-9df5-3ef6aa20c49b" testName="SearchToActivityDetailsForRefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" computerName="jenkins" duration="00:00:12.2800000" startTime="2019-11-27T11:59:25.0000000+00:00" endTime="2019-11-27T11:59:37.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b6c2f606-275a-455b-ac8b-d90816054ea7"><Output><StdOut>Given User has specified latitude 48.85667, longitude 2.350987 and radius of 30 kms for suppliers 36br8t9byf4  with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(48.85667, 2.350987, 30, "36br8t9byf4 ", "USD") (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (3.1s)
+And User has selected refundable activity
+-&gt; done: ActivityDetailsStatefullSteps.GivenUserHasSelectedRefundableActivity("refundable") (0.0s)
+When Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (9.1s)
+Then Returned activities count should be greater than zero And activity details should be returned
+-&gt; done: ActivityDetailsStatefullSteps.ThenFoundActivityCountShouldBeGreaterThan() (0.0s)
+And Activity returned should be refundable
+-&gt; done: ActivityDetailsStatefullSteps.ThenActivityReturnedShouldBeRefundable("refundable") (0.0s)
+[INFO]: Correlation id : cef744a2-346e-4e99-a069-35eb62ee474b</StdOut></Output></UnitTestResult><UnitTestResult executionId="c3eb4e5a-ead7-48fc-abcc-e528527542b0" testId="1937d156-3b27-4899-83c1-58dd9ee195dc" testName="SearchToOptionInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" computerName="jenkins" duration="00:00:09.3300000" startTime="2019-11-27T12:03:01.0000000+00:00" endTime="2019-11-27T12:03:11.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c3eb4e5a-ead7-48fc-abcc-e528527542b0"><Output><StdOut>Given User has specified latitude 48.85667, longitude 2.350987 and radius of 30 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(48.85667, 2.350987, 30, "36br8t9byf4", "USD") (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (3.1s)
+And User has specified currency for activity details as USD
+-&gt; done: ActivityDetailsStatefullSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (3.1s)
+And User specified currency for option is USD
+-&gt; done: OptionSearchSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+When Activity option is called
+-&gt; done: OptionSearchSteps.WhenActivityOptionIsCalled() (3.1s)
+Then Returned options count should be greater than zero
+-&gt; done: OptionSearchSteps.ThenFoundActivityCountShouldBeGreaterThan() (0.0s)
+[INFO]: Correlation id : cb640f57-b79f-4dcf-9fdb-9c3396e69f6d</StdOut></Output></UnitTestResult><UnitTestResult executionId="bcf0e564-ba78-4bfa-92be-5ed8f0c34c6a" testId="0e1cbcd3-31cb-4886-8d2f-26be7c647dff" testName="SearchToCancelInACircularRegionForAllPassengerTypes(&quot;Paris&quot;,&quot;36.114646&quot;,&quot;-115.172816&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" computerName="jenkins" duration="00:00:37.8830000" startTime="2019-11-27T12:01:04.0000000+00:00" endTime="2019-11-27T12:01:42.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bcf0e564-ba78-4bfa-92be-5ed8f0c34c6a"><Output><StdOut>Given User has specified latitude 36.114646, longitude -115.172816 and radius of 30 kms for suppliers 36br8t9byf4 with specified currency USD
+-&gt; done: ActivitySearchSteps.GivenUserHasSpecifiedLatitudeLongitudeAndRadiusOfKms(36.114646, -115.172816, 30, "36br8t9byf4", "USD") (0.0s)
+And Activity search is called
+-&gt; done: ActivitySearchSteps.WhenActivitySearchIsCalled() (6.2s)
+And Activity details is called
+-&gt; done: ActivityDetailsStatefullSteps.WhenActivityDetailsIsCalled() (9.1s)
+And User specified currency for option is USD
+-&gt; done: OptionSearchSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And User has selected all passenger types
+-&gt; done: OptionSearchSteps.GivenUserHasSelectedAllPassengerTypes() (0.0s)
+And Activity option is called
+-&gt; done: OptionSearchSteps.WhenActivityOptionIsCalled() (9.2s)
+And User specified currency for price request is USD
+-&gt; done: PriceRequestSteps.GivenUserHasSpecifiedCurrency("USD") (0.0s)
+And Activity price is executed
+-&gt; done: PriceRequestSteps.WhenActivityPriceIsExecuted() (3.0s)
+And Booking is attempted
+-&gt; done: BookRequestSteps.WhenBookingIsAttempted() (8.6s)
+When Cancel request is raised
+-&gt; done: CancelRequestSteps.WhenBookingIsAttempted() (1.7s)
+Then Cancel should succeed for confirmed booking
+-&gt; done: CancelRequestSteps.ThenBookShouldBeConfirmed() (0.0s)
+[INFO]: Correlation id : d2f221ad-9525-4f9a-b884-5d697767f3b5</StdOut></Output></UnitTestResult></Results><TestDefinitions><UnitTest name="SearchToOptionInACircularRegionForRefundableAndNon_RefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,&quot;refundable&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="fce7052a-50f7-44da-9ca8-5e9e5e20d871"><Execution id="5311b9f6-a4c4-41e9-b044-c1c8c579ae4a" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Option.Option_With_LocationFeature.SearchToOptionInACircularRegionForRefundableAndNon_RefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2" name="SearchToOptionInACircularRegionForRefundableAndNon_RefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,&quot;refundable&quot;,null)" /></UnitTest><UnitTest name="SearchToBookInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="58cc8277-408c-4817-a872-58c6668f20d3"><Execution id="36d116e1-2e4f-4447-a422-b1e639e03fd7" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Book.Book_With_LocationFeature.SearchToBookInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2" name="SearchToBookInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" /></UnitTest><UnitTest name="SearchToBookInACircularRegionForSameDay(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="86fea99d-77a4-405c-aa0b-cd85e77251d1"><Execution id="023cf1de-2d2e-4917-9462-6f64013b27aa" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Book.Book_With_LocationFeature.SearchToBookInACircularRegionForSameDay(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2" name="SearchToBookInACircularRegionForSameDay(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" /></UnitTest><UnitTest name="SearchToOptionInACircularRegionForAllPassengerTypes(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48.2802&quot;,&quot;36br8t9byf4&quot;,&quot;refundable&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="4f50b38d-27ec-489e-a353-1b530dee6987"><Execution id="81ef84ac-9faa-4c39-a871-84fb5fdc2f9e" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Option.Option_With_LocationFeature.SearchToOptionInACircularRegionForAllPassengerTypes(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48" name="SearchToOptionInACircularRegionForAllPassengerTypes(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48.2802&quot;,&quot;36br8t9byf4&quot;,&quot;refundable&quot;,null)" /></UnitTest><UnitTest name="SearchToOptionInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="1937d156-3b27-4899-83c1-58dd9ee195dc"><Execution id="c3eb4e5a-ead7-48fc-abcc-e528527542b0" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Option.Option_With_LocationFeature.SearchToOptionInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2" name="SearchToOptionInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" /></UnitTest><UnitTest name="SearchToActivityDetailsInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="6b4a431b-4c49-4b45-a747-9447c7356a32"><Execution id="3d98a233-7fbf-4af9-bddb-09e7d9311224" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.ActivityDetails.ActivityDetails_With_LocationFeature.SearchToActivityDetailsInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2" name="SearchToActivityDetailsInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" /></UnitTest><UnitTest name="SearchToActivityDetailsForRefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="e8497320-ebd5-4ed7-9df5-3ef6aa20c49b"><Execution id="b6c2f606-275a-455b-ac8b-d90816054ea7" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.ActivityDetails.ActivityDetails_With_LocationFeature.SearchToActivityDetailsForRefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2" name="SearchToActivityDetailsForRefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" /></UnitTest><UnitTest name="SearchToCancelInACircularRegionHavingRefundableOrNon_RefundableFare(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,&quot;non-refundable&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="d6a8d2c1-8fff-44ee-a965-07edd28bd304"><Execution id="171339b2-e8bd-405f-8fa8-ad9ad1ffc720" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Cancel.Cancel_With_LocationFeature.SearchToCancelInACircularRegionHavingRefundableOrNon_RefundableFare(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2" name="SearchToCancelInACircularRegionHavingRefundableOrNon_RefundableFare(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,&quot;non-refundable&quot;,null)" /></UnitTest><UnitTest name="SearchToOptionInACircularRegionForRefundableAndNon_RefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,&quot;non-refundable&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="0ca91f6c-aad2-481c-93dd-6f19e0b525b0"><Execution id="ae0dcbfd-e4f0-41d8-a3c7-4fd1fdfd06b0" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Option.Option_With_LocationFeature.SearchToOptionInACircularRegionForRefundableAndNon_RefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2" name="SearchToOptionInACircularRegionForRefundableAndNon_RefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,&quot;non-refundable&quot;,null)" /></UnitTest><UnitTest name="SearchToBookInACircularRegionForAllPassengerTypes(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48.23&quot;,&quot;36br8t9byf4&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="52d08c4f-40e3-43f4-a85c-354dbb167722"><Execution id="91a1cd65-0295-4da9-b7b6-10320f6c4496" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Book.Book_With_LocationFeature.SearchToBookInACircularRegionForAllPassengerTypes(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48" name="SearchToBookInACircularRegionForAllPassengerTypes(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48.23&quot;,&quot;36br8t9byf4&quot;,null)" /></UnitTest><UnitTest name="SearchToPriceInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="ded8775b-5261-455d-aaee-575dbedde8b9"><Execution id="e074f15d-5e0e-4285-afde-dd836ad4ca64" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Price.Price_With_LocationFeature.SearchToPriceInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2" name="SearchToPriceInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" /></UnitTest><UnitTest name="SearchToCancelInACircularRegionHavingRefundableOrNon_RefundableFare(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,&quot;refundable&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="21c195c5-b312-4e56-9ddd-6d9a1bd90c9c"><Execution id="268bdf09-b74a-45b4-883f-86ae25f052bc" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Cancel.Cancel_With_LocationFeature.SearchToCancelInACircularRegionHavingRefundableOrNon_RefundableFare(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2" name="SearchToCancelInACircularRegionHavingRefundableOrNon_RefundableFare(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,&quot;refundable&quot;,null)" /></UnitTest><UnitTest name="SearchToActivityDetailsForNon_RefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="e3da7936-07fb-432a-8148-80f14608edef"><Execution id="35d84c20-c500-4a88-af3a-22a8da3a280a" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.ActivityDetails.ActivityDetails_With_LocationFeature.SearchToActivityDetailsForNon_RefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2" name="SearchToActivityDetailsForNon_RefundableActivity(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" /></UnitTest><UnitTest name="SearchForActivitesInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="ab6c7a5b-f729-4ff3-a5ab-fa825e718726"><Execution id="733db963-8f0c-4bd2-8291-9f9b264d9133" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Search.ActivitySearch_With_LocationFeature.SearchForActivitesInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2" name="SearchForActivitesInACircularRegion(&quot;Paris&quot;,&quot;48.85667&quot;,&quot;2.350987&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" /></UnitTest><UnitTest name="SearchForActivitesInACircularRegionForSameDay(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48.2802&quot;,&quot;36br8t9byf4&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="38a94ed2-7d7c-49e6-a2e9-3f58d0f4a726"><Execution id="1abfdb3b-a56c-44dc-8ead-00ecfad0d85a" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Search.ActivitySearch_With_LocationFeature.SearchForActivitesInACircularRegionForSameDay(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48" name="SearchForActivitesInACircularRegionForSameDay(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48.2802&quot;,&quot;36br8t9byf4&quot;,null)" /></UnitTest><UnitTest name="SearchToCancelInACircularRegionForSameDay(&quot;Delhi&quot;,&quot;28.56639&quot;,&quot;77.10306&quot;,&quot;48.2802&quot;,&quot;36br8t9byf4&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="83289acb-e4a5-4ce6-97b7-91ebdbe769ae"><Execution id="4d13a9ea-eff4-4ba2-bf51-0e30d7c17598" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Cancel.Cancel_With_LocationFeature.SearchToCancelInACircularRegionForSameDay(&quot;Delhi&quot;,&quot;28.56639&quot;,&quot;77.10306&quot;,&quot;48" name="SearchToCancelInACircularRegionForSameDay(&quot;Delhi&quot;,&quot;28.56639&quot;,&quot;77.10306&quot;,&quot;48.2802&quot;,&quot;36br8t9byf4&quot;,null)" /></UnitTest><UnitTest name="SearchToCancelInACircularRegionForAllPassengerTypes(&quot;Paris&quot;,&quot;36.114646&quot;,&quot;-115.172816&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="0e1cbcd3-31cb-4886-8d2f-26be7c647dff"><Execution id="bcf0e564-ba78-4bfa-92be-5ed8f0c34c6a" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Cancel.Cancel_With_LocationFeature.SearchToCancelInACircularRegionForAllPassengerTypes(&quot;Paris&quot;,&quot;36.114646&quot;,&quot;-115" name="SearchToCancelInACircularRegionForAllPassengerTypes(&quot;Paris&quot;,&quot;36.114646&quot;,&quot;-115.172816&quot;,&quot;30&quot;,&quot;36br8t9byf4&quot;,null)" /></UnitTest><UnitTest name="SearchToOptionInACircularRegionForAllPassengerTypes(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48.2802&quot;,&quot;36br8t9byf4&quot;,&quot;non-refundable&quot;,null)" storage="/opt/jenkins/workspace/activity-usg-integrationtest/src/tavisca.usg.activities.spectests/bin/debug/netcoreapp2.1/tavisca.usg.activities.spectests.dll" id="5456bd09-8b26-43c6-b8d2-f641e96f38a2"><Execution id="6390dc87-0280-470b-a7c2-8a58460e09ce" /><TestMethod codeBase="/opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Tavisca.Usg.Activities.SpecTests.Option.Option_With_LocationFeature.SearchToOptionInACircularRegionForAllPassengerTypes(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48" name="SearchToOptionInACircularRegionForAllPassengerTypes(&quot;Boston&quot;,&quot;42.374154&quot;,&quot;-72.503869&quot;,&quot;48.2802&quot;,&quot;36br8t9byf4&quot;,&quot;non-refundable&quot;,null)" /></UnitTest></TestDefinitions><TestEntries><TestEntry testId="4f50b38d-27ec-489e-a353-1b530dee6987" executionId="81ef84ac-9faa-4c39-a871-84fb5fdc2f9e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="ab6c7a5b-f729-4ff3-a5ab-fa825e718726" executionId="733db963-8f0c-4bd2-8291-9f9b264d9133" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="52d08c4f-40e3-43f4-a85c-354dbb167722" executionId="91a1cd65-0295-4da9-b7b6-10320f6c4496" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="83289acb-e4a5-4ce6-97b7-91ebdbe769ae" executionId="4d13a9ea-eff4-4ba2-bf51-0e30d7c17598" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="fce7052a-50f7-44da-9ca8-5e9e5e20d871" executionId="5311b9f6-a4c4-41e9-b044-c1c8c579ae4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="5456bd09-8b26-43c6-b8d2-f641e96f38a2" executionId="6390dc87-0280-470b-a7c2-8a58460e09ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="21c195c5-b312-4e56-9ddd-6d9a1bd90c9c" executionId="268bdf09-b74a-45b4-883f-86ae25f052bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="ded8775b-5261-455d-aaee-575dbedde8b9" executionId="e074f15d-5e0e-4285-afde-dd836ad4ca64" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="86fea99d-77a4-405c-aa0b-cd85e77251d1" executionId="023cf1de-2d2e-4917-9462-6f64013b27aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="58cc8277-408c-4817-a872-58c6668f20d3" executionId="36d116e1-2e4f-4447-a422-b1e639e03fd7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="e3da7936-07fb-432a-8148-80f14608edef" executionId="35d84c20-c500-4a88-af3a-22a8da3a280a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="38a94ed2-7d7c-49e6-a2e9-3f58d0f4a726" executionId="1abfdb3b-a56c-44dc-8ead-00ecfad0d85a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="d6a8d2c1-8fff-44ee-a965-07edd28bd304" executionId="171339b2-e8bd-405f-8fa8-ad9ad1ffc720" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="6b4a431b-4c49-4b45-a747-9447c7356a32" executionId="3d98a233-7fbf-4af9-bddb-09e7d9311224" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="0ca91f6c-aad2-481c-93dd-6f19e0b525b0" executionId="ae0dcbfd-e4f0-41d8-a3c7-4fd1fdfd06b0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="e8497320-ebd5-4ed7-9df5-3ef6aa20c49b" executionId="b6c2f606-275a-455b-ac8b-d90816054ea7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="1937d156-3b27-4899-83c1-58dd9ee195dc" executionId="c3eb4e5a-ead7-48fc-abcc-e528527542b0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestEntry testId="0e1cbcd3-31cb-4886-8d2f-26be7c647dff" executionId="bcf0e564-ba78-4bfa-92be-5ed8f0c34c6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" /></TestEntries><TestLists><TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" /><TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" /></TestLists><ResultSummary outcome="Completed"><Counters total="18" executed="18" passed="18" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" /><Output><StdOut>NUnit Adapter 3.10.0.21: Test execution startedRunning all tests in /opt/jenkins/workspace/Activity-USG-IntegrationTest/src/Tavisca.Usg.Activities.SpecTests/bin/Debug/netcoreapp2.1/Tavisca.Usg.Activities.SpecTests.dllNUnit3TestExecutor converted 18 of 18 NUnit test casesNUnit Adapter 3.10.0.21: Test execution complete</StdOut></Output></ResultSummary></TestRun>

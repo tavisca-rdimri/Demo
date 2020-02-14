@@ -32,7 +32,7 @@ pipeline {
         {
             steps
             {
-                exho"===========Allure report==========="
+                echo"===========Allure report==========="
                 bat 'allure includeProperties: false, jdk: '', results: [[path: '**/TestResults']]'
             }
         }
